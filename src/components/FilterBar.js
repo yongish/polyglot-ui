@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import Form from 'react-bootstrap/Form';
 
@@ -15,7 +15,6 @@ const formCheckStyle = {
 };
 
 function FilterBar() {
-  const [checked, setChecked] = useState(true);
   return (
     <div>
       <h3 style={h3Style}>Familarity</h3>

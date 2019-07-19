@@ -2,13 +2,7 @@ import React, { Component } from 'react';
 
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-
-import Switch from "react-switch";
 
 class WordAccordion extends Component {
   constructor() {
