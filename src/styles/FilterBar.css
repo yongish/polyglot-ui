@@ -1,0 +1,7 @@
+.Form {
+  display: inline-block;
+}
+
+.Form.Check {
+  text-align: left;
+}

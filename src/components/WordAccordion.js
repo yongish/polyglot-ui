@@ -22,20 +22,13 @@ class WordAccordion extends Component {
   }
   render() {
     return (
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="0" className="col-md-10">
         <Card>
           <Card.Header>
             <Accordion.Toggle as={Button} variant="light" eventKey="0">
               Word
             </Accordion.Toggle>
           </Card.Header>
-          <ButtonToolbar>
-            <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
-              <ToggleButton className="Btn-Blue-BG" value={1}>Radio 1 (pre-checked)</ToggleButton>
-              <ToggleButton value={2}>Radio 2</ToggleButton>
-              <ToggleButton value={3}>Radio 3</ToggleButton>
-            </ToggleButtonGroup>
-          </ButtonToolbar>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               hi
