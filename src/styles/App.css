@@ -31,3 +31,7 @@
     transform: rotate(360deg);
   }
 }
+
+.Btn-Blue-BG.active {
+  background-color: blue !important;
+}

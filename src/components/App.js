@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Tabs defaultActiveKey="chinese" transition={false} id="noanim-tab-example">
-        
+
           <Tab eventKey="chinese" title="Chinese">
             <OptionBar />
             <div style={{ display: 'flex' }}>
