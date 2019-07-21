@@ -3,6 +3,7 @@ import '../styles/App.css';
 
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import {RemoveScrollBar} from 'react-remove-scroll-bar';
 
 import FilterBar from './FilterBar';
 import OptionBar from './OptionBar';
@@ -11,14 +12,17 @@ import WordAccordion from './WordAccordion';
 function App() {
   return (
     <div className="App">
+    <RemoveScrollBar />
       <header className="App-header">
         <Tabs defaultActiveKey="chinese" transition={false} id="noanim-tab-example">
 
           <Tab eventKey="chinese" title="Chinese">
             <OptionBar />
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', height: '100vh' }}>
               <FilterBar />
+              <div className="col-md-10" style={{height: '80vh' , overflowY: 'auto'}}>
               <WordAccordion />
+              </div>
             </div>
           </Tab>
 
